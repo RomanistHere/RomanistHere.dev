@@ -1,4 +1,7 @@
 <script>
+	import { onMount } from "svelte";
+	import { page } from "$app/stores";
+
 	import "../app.css";
 
 	import SEO from "$lib/components/SEO.svelte";
@@ -49,6 +52,15 @@
 		url: "../",
 		action: () => { menuMode = "main" }
 	}];
+
+	onMount(() => {
+		const { pathname } = $page.url;
+		if (pathname.includes("/md/hire-me")) {
+			menuMode = "hire-me";
+		} else if (pathname.includes("/md/my-thoughts")) {
+			menuMode = "my-thoughts";
+		}
+	});
 </script>
 
 <SEO
@@ -58,8 +70,8 @@
 
 <section class="max-w-4xl mx-auto py-36">
 	<header class="mb-10">
-		<h1 class="text-4xl font-semibold">Roman Smunyov</h1>
-		<h2 class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</h2>
+		<p class="text-4xl font-semibold">Roman Smunyov</p>
+		<p class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</p>
 	</header>
 	<div class="flex">
 		<div class="w-2/5">
