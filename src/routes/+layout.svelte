@@ -69,12 +69,12 @@
 />
 
 <section class="max-w-4xl mx-auto py-36">
-	<header class="mb-10">
+	<header class="mb-10 font-lars tracking-tighter">
 		<p class="text-4xl font-semibold">Roman Smunyov</p>
 		<p class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</p>
 	</header>
 	<div class="flex">
-		<div class="w-2/5">
+		<div class="w-2/5 font-lars">
 			{#if menuMode === "main"}
 				<MenuButtons
 					array={menu}

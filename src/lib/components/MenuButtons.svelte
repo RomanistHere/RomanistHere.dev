@@ -39,7 +39,7 @@
 		<li>
 			<a
 				href="/md/{url}"
-				class="px-8 py-4 transition-colors rounded-lg block text-center bg-gray hover:bg-bright focus:bg-light focus:text-dark text-lg font-medium"
+				class="px-8 py-4 transition-colors rounded-lg block text-center bg-gray hover:bg-bright focus:bg-light focus:text-dark text-lg"
 				class:bg-light={isActive}
 				class:text-dark={isActive}
 				class:pointer-events-none={isActive}
