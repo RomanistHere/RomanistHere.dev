@@ -68,13 +68,13 @@
 	description=""
 />
 
-<section class="max-w-4xl mx-auto py-36">
+<div class="max-w-7xl mx-auto py-36 px-12 h-screen overflow-hidden">
 	<header class="mb-10 font-lars tracking-tighter">
 		<p class="text-4xl font-semibold">Roman Smunyov</p>
 		<p class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</p>
 	</header>
-	<div class="flex">
-		<div class="w-2/5 font-lars">
+	<div class="flex h-full">
+		<div class="w-2/6 font-lars">
 			{#if menuMode === "main"}
 				<MenuButtons
 					array={menu}
@@ -89,8 +89,8 @@
 				/>
 			{/if}
 		</div>
-		<div class="w-3/5 px-8">
+		<div class="w-4/6 px-8 h-full overflow-auto">
 			<slot />
 		</div>
 	</div>
-</section>
+</div>
