@@ -39,10 +39,11 @@
 		<li>
 			<a
 				href="/md/{url}"
-				class="px-8 py-4 transition-colors rounded-lg block text-center bg-gray hover:bg-bright focus:bg-light focus:text-dark text-lg"
+				class="px-8 py-4 transition-colors rounded-lg block text-center bg-gray hover:bg-bright hover:drop-shadow-[0_0_6px_rgba(161,113,50,.3)] focus:bg-light focus:text-dark text-lg"
 				class:bg-light={isActive}
 				class:text-dark={isActive}
 				class:pointer-events-none={isActive}
+				class:drop-shadow-[0_0_8px_rgba(244,237,224,.3)]={isActive}
 				bind:this={buttonRefs[i]}
 				on:click|preventDefault={() => {
 					goto(`/md/${url}`);
