@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About myself
 description: empty
 ---
 

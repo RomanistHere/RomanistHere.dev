@@ -89,8 +89,18 @@
 				/>
 			{/if}
 		</div>
-		<div class="w-4/6 px-8 h-full overflow-auto">
-			<slot />
+		<div class="w-4/6 px-8 h-screen relative">
+			<main class="h-full overflow-auto no-scrollbar -mt-64 pt-64 pb-64">
+				<slot />
+			</main>
+			<div class="absolute left-0 right-0 -top-64 h-36"></div>
+			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180"></div>
 		</div>
 	</div>
 </div>
+
+<style>
+	.absolute {
+		background: linear-gradient(to bottom, rgb(32, 35, 41) 10%, rgba(0, 0, 0, 0) 100%);
+	}
+</style>

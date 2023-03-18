@@ -31,8 +31,38 @@
 	}
 
 	article :global(li) {
-		list-style: disc;
 		margin-bottom: 1.2rem;
 		margin-left: .4rem;
+
+		list-style: disc;
+	}
+
+	article :global(a) {
+		position: relative;
+		white-space: nowrap;
+
+		text-decoration: underline;
+		transition: color .2s;
+	}
+
+	article :global(a::before) {
+		content: "";
+		position: absolute;
+		z-index: -1;
+
+		left: -2px;
+		right: -2px;
+		top: -4px;
+		bottom: -4px;
+
+		transition: background-color .2s
+	}
+
+	article :global(a:hover) {
+		color: rgb(32, 35, 41);
+	}
+
+	article :global(a:hover::before) {
+		background-color: rgb(244, 237, 224);
 	}
 </style>
