@@ -30,8 +30,8 @@
 	}];
 
 	const hireMeMenu = [{
-		title: "About me",
-		url: "hire-me/about-me",
+		title: "Professional summary",
+		url: "hire-me/summary",
 	}, {
 		title: "Where I worked",
 		url: "hire-me/worked",

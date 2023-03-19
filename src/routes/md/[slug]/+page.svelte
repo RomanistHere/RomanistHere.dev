@@ -22,8 +22,27 @@
 
 <style>
 	article :global(p),
+	article :global(h2),
+	article :global(h3),
 	article :global(ul) {
 		margin-bottom: 1.6rem;
+	}
+
+	article :global(h2) {
+		font-size: 1.5rem;
+		font-family: "Larsseit-Bold";
+		color: rgb(161, 113, 50);
+	}
+
+	article :global(h3) {
+		font-size: 1.25rem;
+		font-family: "Larsseit-Bold";
+		color: rgb(161, 113, 50);
+	}
+
+	article :global(em) {
+		font-style: normal;
+		background-color: rgba(161, 113, 50, .9);
 	}
 
 	article :global(ul) {
