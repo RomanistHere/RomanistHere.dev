@@ -36,7 +36,7 @@
 		title: "Where I worked",
 		url: "hire-me/worked",
 	}, {
-		title: "My Resume and CV",
+		title: "Printable resume and CV",
 		url: "hire-me/resume-and-cv",
 	}, {
 		title: "Contact me",
