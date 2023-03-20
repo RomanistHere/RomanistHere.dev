@@ -39,6 +39,9 @@
 		title: "My Resume and CV",
 		url: "hire-me/resume-and-cv",
 	}, {
+		title: "Contact me",
+		url: "hire-me/contact-me",
+	}, {
 		title: "Back to main menu",
 		url: "../",
 		action: () => { menuMode = "main" }

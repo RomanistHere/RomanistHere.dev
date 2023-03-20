@@ -9,4 +9,4 @@ But _profession is but a part in my life_. It is big - the biggest one - but the
 
 That all sounds pretty nerdy, doesn't it? It surely does, but actually _I'm an extremely easy-to-connect-with person_ open to chat around. _I like making friends with people I meet outside_, prefer the old way to social networks - that's why you won't find my personal account anywhere, it just doesn't exist.
 
-I care about privacy also, that's why I won't share much more info here, but if you would like to know me better, don't hesitate to [contact](contact-me)
+I care about privacy also, that's why I won't share much more info here, but if you would like to know me better, don't hesitate to [contact](contact-me).
