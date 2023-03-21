@@ -15,6 +15,26 @@ module.exports = {
       fontFamily: {
         'lars': ['Larsseit-Bold', ...defaultTheme.fontFamily.sans],
         'graph': ['Graphic', ...defaultTheme.fontFamily.sans],
+      },
+      keyframes: {
+        appear: {
+          '0%, 30%': {
+            transform: 'translateX(50px)',
+            opacity: "0"
+          },
+          '50%, 90%': {
+            transform: 'none',
+            opacity: "1"
+          },
+          "100%": {
+            opacity: "0"
+          }
+        }
+      },
+      animation: {
+        'appearing': 'appear 10s ease-in-out',
+        'appearing-delayed': 'appear 10s ease-in-out 3s',
+        'appearing-delayed-twice': 'appear 10s ease-in-out 10s'
       }
     },
   },
