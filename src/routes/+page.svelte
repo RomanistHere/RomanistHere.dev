@@ -12,6 +12,6 @@
 		I don't...
 	</p>
 	<p class="animate-appearing-delayed-twice mt-4 opacity-0">
-		Double click to replay the experience.
+		Double click...
 	</p>
 </article>

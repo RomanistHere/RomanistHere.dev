@@ -2,6 +2,16 @@
 	import random from "lodash/random";
 	import { onMount } from "svelte";
 
+	const colors = [
+		"rgba(244, 237, 224, .05)",
+		"rgba(161, 113, 50, .2)",
+	];
+
+	const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+	let ref;
+
+	// credits for code: https://codepen.io/ajm13/pen/qraGKY
 	class Vector {
 		constructor (x, y) {
 			this.x = x;
@@ -83,11 +93,6 @@
 		}
 	}
 
-	const colors = [
-		"rgba(244, 237, 224, .05)",
-		"rgba(161, 113, 50, .2)",
-	];
-
 	class Particle {
 		constructor (x, y, vx = 0, vy = 0) {
 			this.pos = new Vector(x, y);
@@ -109,9 +114,6 @@
 			ctx.fillRect(this.pos.x, this.pos.y, 1, 1);
 		}
 	}
-
-	const sleep = ms => new Promise(r => setTimeout(r, ms));
-	let ref;
 
 	onMount(() => {
 		const init = async () => {
@@ -165,9 +167,12 @@
 
 		const w = 900;
 		const h = 900;
-		let noise; let particles; let rid;
 		const cv = document.createElement("canvas");
 		const ctx = cv.getContext("2d");
+
+		let noise;
+		let particles;
+		let rid;
 
 		cv.width = w;
 		cv.height = h;

@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from "svelte";
+	import { afterNavigate } from "$app/navigation";
 	import { page } from "$app/stores";
 
 	import "../app.css";
@@ -10,58 +11,82 @@
 	// menuMode: "main" | "hire-me" | "my-thoughts"
 	$: menuMode = "main";
 
-	const menu = [{
-		title: "About me",
-		url: "about-me",
-	}, {
-		title: "Thoughts on important things",
-		url: "my-thoughts",
-		action: () => { menuMode = "my-thoughts" }
-	}, {
-		title: "Personal projects",
-		url: "my-projects",
-	}, {
-		title: "Consider hiring me",
-		url: "hire-me",
-		action: () => { menuMode = "hire-me" }
-	}, {
-		title: "Contact me",
-		url: "contact-me",
-	}];
+	let top;
 
-	const hireMeMenu = [{
-		title: "Professional summary",
-		url: "hire-me/summary",
-	}, {
-		title: "Where I worked",
-		url: "hire-me/worked",
-	}, {
-		title: "Printable resume and CV",
-		url: "hire-me/resume-and-cv",
-	}, {
-		title: "Contact me",
-		url: "hire-me/contact-me",
-	}, {
-		title: "Back to main menu",
-		url: "../",
-		action: () => { menuMode = "main" }
-	}];
+	const menu = [
+		{
+			title: "About me",
+			url: "about-me",
+		}, {
+			title: "Thoughts on some things",
+			url: "my-thoughts",
+			action: () => { menuMode = "my-thoughts" }
+		}, {
+			title: "Personal projects",
+			url: "my-projects",
+		}, {
+			title: "Consider hiring me",
+			url: "hire-me",
+			action: () => { menuMode = "hire-me" }
+		}, {
+			title: "Contact me",
+			url: "contact-me",
+		}
+	];
 
-	const thoughtsMenu = [{
-		title: "Why I don't have a fancy website",
-		url: "my-thoughts/fancy-website",
-	}, {
-		title: "Back to main menu",
-		url: "../",
-		action: () => { menuMode = "main" }
-	}];
+	const hireMeMenu = [
+		{
+			title: "Professional summary",
+			url: "hire-me/summary",
+		}, {
+			title: "Where I worked",
+			url: "hire-me/worked",
+		}, {
+			title: "Printable resume and CV",
+			url: "hire-me/resume-and-cv",
+		}, {
+			title: "Contact me",
+			url: "hire-me/contact-me",
+		}, {
+			title: "Back to main menu",
+			url: "../",
+			action: () => { menuMode = "main" }
+		}
+	];
 
-	onMount(() => {
-		const { pathname } = $page.url;
+	const thoughtsMenu = [
+		{
+			title: "Why I don't have a fancier website",
+			url: "my-thoughts/fancy-website",
+		}, {
+			title: "Back to main menu",
+			url: "../",
+			action: () => { menuMode = "main" }
+		}
+	];
+
+	const updateMenu = ({ pathname }) => {
 		if (pathname.includes("/md/hire-me")) {
 			menuMode = "hire-me";
 		} else if (pathname.includes("/md/my-thoughts")) {
 			menuMode = "my-thoughts";
+		} else {
+			menuMode = "main";
+		}
+	};
+
+	$: updateMenu($page.url);
+
+	onMount(() => {
+		updateMenu($page.url);
+	});
+
+	afterNavigate(nav => {
+		if (nav.type === "link") {
+			top?.scrollIntoView({
+				behavior: "smooth",
+				block: "end",
+			});
 		}
 	});
 </script>
@@ -94,6 +119,7 @@
 		</div>
 		<div class="w-4/6 px-8 h-screen relative">
 			<main class="h-full overflow-auto no-scrollbar -mt-64 pt-64 pb-64">
+				<span bind:this={top}></span>
 				<slot />
 			</main>
 			<div class="absolute left-0 right-0 -top-64 h-36"></div>
