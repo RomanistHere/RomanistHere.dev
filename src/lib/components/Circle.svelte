@@ -9,6 +9,13 @@
 
 	const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+	const w = 900;
+	const h = 900;
+
+	let noise;
+	let particles;
+	let rid;
+
 	let ref;
 
 	// credits for code: https://codepen.io/ajm13/pen/qraGKY
@@ -165,14 +172,8 @@
 			rid = window.requestAnimationFrame(animate);
 		};
 
-		const w = 900;
-		const h = 900;
 		const cv = document.createElement("canvas");
 		const ctx = cv.getContext("2d");
-
-		let noise;
-		let particles;
-		let rid;
 
 		cv.width = w;
 		cv.height = h;
