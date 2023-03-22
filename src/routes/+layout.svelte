@@ -65,6 +65,13 @@
 		}
 	];
 
+	const scrollArticleToTop = () => {
+		top?.scrollIntoView({
+			behavior: "smooth",
+			block: "end",
+		});
+	};
+
 	const updateMenu = ({ pathname }) => {
 		if (pathname.includes("/md/hire-me")) {
 			menuMode = "hire-me";
@@ -83,10 +90,7 @@
 
 	afterNavigate(nav => {
 		if (nav.type === "link") {
-			top?.scrollIntoView({
-				behavior: "smooth",
-				block: "end",
-			});
+			scrollArticleToTop();
 		}
 	});
 </script>
@@ -96,34 +100,44 @@
 	description=""
 />
 
-<div class="max-w-7xl mx-auto py-36 px-12 h-screen overflow-hidden">
+<div class="max-w-7xl mx-auto py-12 md:py-36 px-4 md:px-12 md:h-screen md:overflow-hidden">
 	<header class="mb-10 font-lars tracking-tighter">
 		<p class="text-4xl font-semibold">Roman Smunyov</p>
 		<p class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</p>
 	</header>
-	<div class="flex h-full">
-		<div class="w-2/6 font-lars">
-			{#if menuMode === "main"}
-				<MenuButtons
-					array={menu}
-				/>
-			{:else if menuMode === "hire-me"}
-				<MenuButtons
-					array={hireMeMenu}
-				/>
-			{:else if menuMode === "my-thoughts"}
-				<MenuButtons
-					array={thoughtsMenu}
-				/>
-			{/if}
+	<div class="flex flex-wrap h-full">
+		<div class="w-full md:w-2/6 font-lars mb-12 md:mb-0">
+			<div class="-m-4 p-4 overflow-hidden md:px-0 md:mx-0 md:overflow-visible">
+				{#if menuMode === "main"}
+					<MenuButtons
+						array={menu}
+					/>
+				{:else if menuMode === "hire-me"}
+					<MenuButtons
+						array={hireMeMenu}
+					/>
+				{:else if menuMode === "my-thoughts"}
+					<MenuButtons
+						array={thoughtsMenu}
+					/>
+				{/if}
+			</div>
 		</div>
-		<div class="w-4/6 px-8 h-screen relative">
-			<main class="h-full overflow-auto no-scrollbar -mt-64 pt-64 pb-64">
+		<div class="w-full md:w-4/6 md:px-8 md:h-screen relative">
+			<main class="md:h-full md:overflow-auto md:no-scrollbar md:-mt-64 md:pt-64 md:pb-64">
 				<span bind:this={top}></span>
 				<slot />
+				{#if $page.url.pathname !== "/"}
+					<button
+						on:click|preventDefault={scrollArticleToTop}
+						class="block mx-auto p-4 border border-bright rounded-xl md:hidden transition-colors active:border-light"
+					>
+						⬆️ Scroll back to top ⬆️
+					</button>
+				{/if}
 			</main>
-			<div class="absolute left-0 right-0 -top-64 h-36"></div>
-			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180"></div>
+			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block"></div>
+			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"></div>
 		</div>
 	</div>
 </div>

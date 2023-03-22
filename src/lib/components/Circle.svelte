@@ -1,6 +1,7 @@
 <script>
-	import random from "lodash/random";
 	import { onMount } from "svelte";
+
+	import random from "lodash/random";
 
 	const colors = [
 		"rgba(244, 237, 224, .05)",
@@ -9,13 +10,13 @@
 
 	const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-	const w = 900;
-	const h = 900;
+	let w = 900;
+	let h = 900;
 
 	let noise;
 	let particles;
 	let rid;
-
+	let innerWidth;
 	let ref;
 
 	// credits for code: https://codepen.io/ajm13/pen/qraGKY
@@ -123,6 +124,17 @@
 	}
 
 	onMount(() => {
+		if (innerWidth < 1280 && innerWidth >= 1024) {
+			w = 700;
+			h = 700;
+		} else if (innerWidth < 1024 && innerWidth >= 768) {
+			w = 500;
+			h = 500;
+		} else if (innerWidth < 768) {
+			w = innerWidth;
+			h = innerWidth + 100;
+		}
+
 		const init = async () => {
 			noise = new Noise(w, h, 5);
 			particles = [];
@@ -186,9 +198,19 @@
 	});
 </script>
 
-<div class="relative">
-	<div
-		class="absolute -top-64 -left-24"
-		bind:this={ref}
-	></div>
-</div>
+<svelte:window bind:innerWidth />
+
+<div bind:this={ref} class="-mx-4"></div>
+
+<style>
+	div {
+		transform: translate(-10%, -25%);
+	}
+
+	@media screen and (max-width: 767px) {
+		div {
+			margin-top: -2rem;
+			transform: none;
+		}
+	}
+</style>

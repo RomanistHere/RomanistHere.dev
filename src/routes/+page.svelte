@@ -4,7 +4,7 @@
 
 <Circle />
 
-<article class="relative mt-96">
+<article class="absolute mt-96 hidden md:block">
 	<p class="animate-appearing mb-0 opacity-0">
 		Do you know what that is?
 	</p>
