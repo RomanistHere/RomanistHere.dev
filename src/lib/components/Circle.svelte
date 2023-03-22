@@ -200,7 +200,7 @@
 
 <svelte:window bind:innerWidth />
 
-<div bind:this={ref} class="-mx-4"></div>
+<div bind:this={ref} class="-mx-4 md:absolute"></div>
 
 <style>
 	div {

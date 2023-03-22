@@ -105,7 +105,23 @@
 		<p class="text-4xl font-semibold">Roman Smunyov</p>
 		<p class="text-[2.75rem] leading-9 text-bright font-semibold">RomanistHere</p>
 	</header>
-	<div class="flex flex-wrap h-full">
+	<div class="flex flex-col-reverse md:flex-row-reverse flex-wrap h-full">
+		<div class="w-full md:w-4/6 md:px-8 md:h-screen relative">
+			<main class="md:h-full md:overflow-auto md:no-scrollbar md:-mt-64 md:pt-64 md:pb-64">
+				<span bind:this={top}></span>
+				<slot />
+				{#if $page.url.pathname !== "/"}
+					<button
+						on:click|preventDefault={scrollArticleToTop}
+						class="block mx-auto p-4 border border-bright rounded-xl md:hidden transition-colors active:border-light"
+					>
+						⬆️ Scroll back to top ⬆️
+					</button>
+				{/if}
+			</main>
+			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block"></div>
+			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"></div>
+		</div>
 		<div class="w-full md:w-2/6 font-lars mb-12 md:mb-0">
 			<div class="-m-4 p-4 overflow-hidden md:px-0 md:mx-0 md:overflow-visible">
 				{#if menuMode === "main"}
@@ -122,22 +138,6 @@
 					/>
 				{/if}
 			</div>
-		</div>
-		<div class="w-full md:w-4/6 md:px-8 md:h-screen relative">
-			<main class="md:h-full md:overflow-auto md:no-scrollbar md:-mt-64 md:pt-64 md:pb-64">
-				<span bind:this={top}></span>
-				<slot />
-				{#if $page.url.pathname !== "/"}
-					<button
-						on:click|preventDefault={scrollArticleToTop}
-						class="block mx-auto p-4 border border-bright rounded-xl md:hidden transition-colors active:border-light"
-					>
-						⬆️ Scroll back to top ⬆️
-					</button>
-				{/if}
-			</main>
-			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block"></div>
-			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"></div>
 		</div>
 	</div>
 </div>
