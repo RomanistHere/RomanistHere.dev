@@ -1,6 +1,6 @@
 ---
 title: About myself
-description: empty
+description: Short text to get to know Roman better.
 ---
 
 Professionally, I'm a _web developer_ - I use programming to make money at my job, but also _to solve problems and help people in my spare time_. In the best case scenario I do both at the same time - but even then I don't stop creating helpful tools in the free ~~nights~~ hours. You can check _some things I made by seeing ["Personal projects"](my-projects)_.

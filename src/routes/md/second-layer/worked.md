@@ -1,6 +1,6 @@
 ---
 title: Where I worked
-description: empty
+description: Companies Roman worked at.
 ---
 
 I've worked at 4 companies so far. It all began in a small local digital agency and ended up going worldwide. I'll list companies by relevancy - from current to old ones.

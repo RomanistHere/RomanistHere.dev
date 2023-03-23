@@ -42,6 +42,9 @@
 			title: "Where I worked",
 			url: "hire-me/worked",
 		}, {
+			title: "Links to GitHub, etc.",
+			url: "hire-me/links",
+		}, {
 			title: "Printable resume and CV",
 			url: "hire-me/resume-and-cv",
 		}, {

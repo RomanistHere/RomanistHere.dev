@@ -1,6 +1,6 @@
 ---
 title: My projects
-description: empty
+description: Personal/pet/side projects of RomanistHere.
 ---
 
 I'll list them in order I made them.

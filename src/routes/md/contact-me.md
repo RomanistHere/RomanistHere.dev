@@ -1,6 +1,6 @@
 ---
 title: Contact me
-description: empty
+description: The best way to contact.
 ---
 
 Email is the best way to communicate privately.

@@ -1,6 +1,6 @@
 ---
 title: Professional summary
-description: empty
+description: Get to know Roman better from a work-related point of view.
 ---
 
 _Front-end developer_, or as it's popular nowadays - Software Engineer - _with BS in Mathematics_. Since I know JavaScript very well, I am technically a Full Stack - I wrote a lot of back-end code on Node.js - but I prefer to work on front-end.

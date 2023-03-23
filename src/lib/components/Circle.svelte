@@ -19,7 +19,7 @@
 	let innerWidth;
 	let ref;
 
-	// credits for code: https://codepen.io/ajm13/pen/qraGKY
+	// credits for the code: https://codepen.io/ajm13/pen/qraGKY
 	class Vector {
 		constructor (x, y) {
 			this.x = x;

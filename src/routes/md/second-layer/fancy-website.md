@@ -1,6 +1,6 @@
 ---
 title: Why I don't have a fancier website
-description: empty
+description: Thought on why some front-end engineers might now have fancy website while others do.
 ---
 
 You might have expected a fancy website here - I might have done it, even. Like the other devs do - to bring beauty to this world, learn a new tool and ~~show off~~ impress. I would have loved that, but I don't have time for this, you see. _I spend my personal programming ~~nights~~ hours to actually bring value to other people_. I've been doing pet projects for the last 4-5 years and some of them have even succeeded by this time whereas some of them haven't. You can check them in my ["Personal projects"](../my-projects) section.

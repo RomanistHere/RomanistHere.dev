@@ -1,6 +1,6 @@
 ---
 title: My thoughts
-description: empty
+description: Random thoughts from a random guy.
 ---
 
-This section is going to be updated when I have something I want to share. You might consider it as a personal blog or a way to learn more about my values - it's up to you. For what I know it's not going to be usual developer's things unless I discover something truly interesting - but, well, check titles yourself.
+You might consider this section as a personal blog or a way to learn more about my values - it's up to you. I'll be writing about the things I face - which concern me - whether it's something professional or not.

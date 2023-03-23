@@ -1,6 +1,6 @@
 ---
 title: Resume and CV
-description: empty
+description: Printable versions of Roman's professional experience.
 ---
 
 Resume is an one-page summary, most basic stuff, where CV has skill matrix, projects description, dates and other ~~interesting~~ stuff.
