@@ -108,9 +108,7 @@
 		updateMenu($page.url);
 	});
 
-	afterNavigate(() => {
-		scrollArticleToTop();
-	});
+	afterNavigate(scrollArticleToTop);
 </script>
 
 <div
@@ -127,7 +125,7 @@
 			<main
 				class="md:h-full md:overflow-auto md:no-scrollbar md:-mt-64 md:pt-64 md:pb-64"
 			>
-				<span bind:this={top} />
+				<span bind:this={top}></span>
 				<slot />
 				{#if $page.url.pathname !== "/"}
 					<button
@@ -138,10 +136,8 @@
 					</button>
 				{/if}
 			</main>
-			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block" />
-			<div
-				class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"
-			/>
+			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block"></div>
+			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"></div>
 		</div>
 		<div class="w-full md:w-2/6 font-lars mb-12 md:mb-0">
 			<div class="-m-4 p-4 overflow-hidden md:px-0 md:mx-0 md:overflow-visible">
