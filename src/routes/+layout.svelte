@@ -111,6 +111,10 @@
 	afterNavigate(scrollArticleToTop);
 </script>
 
+<svelte:head>
+	<script defer data-domain="romanisthere.dev" src="https://proxy-plaus.romanisthere.workers.dev/work/script.js"></script>
+</svelte:head>
+
 <div
 	class="max-w-7xl mx-auto py-12 md:py-36 px-4 md:px-12 md:h-screen md:overflow-hidden"
 >
