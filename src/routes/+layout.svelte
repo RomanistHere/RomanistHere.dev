@@ -5,7 +5,6 @@
 
 	import "../app.css";
 
-	import SEO from "$lib/components/SEO.svelte";
 	import MenuButtons from "$lib/components/MenuButtons.svelte";
 
 	// menuMode: "main" | "hire-me" | "my-thoughts"
@@ -115,11 +114,6 @@
 		}
 	});
 </script>
-
-<SEO
-	title="Who is RomanistHere"
-	description=""
-/>
 
 <div
 	class="max-w-7xl mx-auto py-12 md:py-36 px-4 md:px-12 md:h-screen md:overflow-hidden"

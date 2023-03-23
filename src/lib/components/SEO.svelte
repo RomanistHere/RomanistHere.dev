@@ -23,11 +23,11 @@
 		content={description}
 	/>
 
-	<title>{title}</title>
+	<title>{title} | RomanistHere</title>
 
 	<meta
 		property="og:site_name"
-		content="melme"
+		content="RomanistHere"
 	/>
 	<meta
 		property="og:locale"
@@ -40,7 +40,7 @@
 	/>
 	<meta
 		property="og:title"
-		content={title}
+		content="{title} | RomanistHere"
 	/>
 	<meta
 		property="og:description"
@@ -66,7 +66,7 @@
 	{:else}
 		<meta
 			property="og:image"
-			content="https://melme.io/logo-192x192.png"
+			content="https://avatars.githubusercontent.com/u/49812531?v=4"
 		/>
 		<meta
 			property="og:image:width"
@@ -103,7 +103,7 @@
 	{:else}
 		<meta
 			name="twitter:image"
-			content="https://melme.io/logo-192x192.png"
+			content="https://avatars.githubusercontent.com/u/49812531?v=4"
 		/>
 	{/if}
 </svelte:head>

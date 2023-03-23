@@ -1,6 +1,12 @@
 <script>
 	import Circle from "$lib/components/Circle.svelte";
+	import SEO from "$lib/components/SEO.svelte";
 </script>
+
+<SEO
+	title="The home page"
+	description="Random page of a random guy."
+/>
 
 <Circle />
 
