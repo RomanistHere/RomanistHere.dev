@@ -33,9 +33,14 @@
 	};
 </script>
 
-<ul class="space-y-5" use:animateInMenu in:fade={{ duration: 50 }}>
+<ul
+	class="space-y-5"
+	use:animateInMenu
+	in:fade={{ duration: 50 }}
+>
 	{#each array as { title, url, textRef, action }, i (url)}
-		{@const isActive = url.includes($page.params.slug) && !url.includes(`${$page.params.slug}/`)}
+		{@const isActive =
+			url.includes($page.params.slug) && !url.includes(`${$page.params.slug}/`)}
 		<li>
 			<a
 				href="/md/{url}"
@@ -47,8 +52,7 @@
 				bind:this={buttonRefs[i]}
 				on:click|preventDefault={() => {
 					goto(`/md/${url}`);
-					if (!action)
-						return;
+					if (!action) return;
 
 					animateOutMenu();
 					setTimeout(() => {

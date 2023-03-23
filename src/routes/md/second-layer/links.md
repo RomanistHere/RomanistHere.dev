@@ -9,7 +9,7 @@ Good news is I do most of my projects open source, so you can check my [personal
 
 This is actually the topic for a separate discussion, but I already wrote too much text, let's spend no more time on that and jump in the links now that you have my warning:
 
-- [Personal GitHub](https://github.com/RomanistHere/) - SvelteKit + Tailwind is my default way to go now, so most projects for the last 2+ years, including [this website](https://github.com/RomanistHere/RomanistHere.dev), use it. Before I actively used Preact and plain JavaScript. 
+- [Personal GitHub](https://github.com/RomanistHere/) - SvelteKit + Tailwind is my default way to go now, so most projects for the last 2+ years, including [this website](https://github.com/RomanistHere/RomanistHere.dev), use it. Before I actively used Preact and plain JavaScript.
 - [NLX GitHub](https://github.com/RomanistNLX) - a lot of projects, but only 2 of them open source and I wasn't the owner. Check pull requests to find my code. A few examples: [[1](https://github.com/nlxai/voice-compass-sdk/pull/33)], [[2](https://github.com/nlxai/voice-compass-sdk/pull/20/files)], [[3](https://github.com/nlxai/voice-compass-sdk/pull/37)], [[4](https://github.com/nlxai/chat-sdk/pull/15)].
 - [LinkedIn](https://www.linkedin.com/in/romanist/) - say hi, I always respond.
-- [My old website](https://romanisthere.github.io/) - you might find some useful info there as well as a blog with a few interesting thoughts. 
+- [My old website](https://romanisthere.github.io/) - you might find some useful info there as well as a blog with a few interesting thoughts.

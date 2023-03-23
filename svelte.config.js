@@ -11,8 +11,8 @@ export default {
 			assets: "build",
 			fallback: null,
 			precompress: false,
-			strict: true
-		})
+			strict: true,
+		}),
 	},
 	extensions: [".svelte", ".md", ".svx"],
 	preprocess: [

@@ -3,10 +3,7 @@
 
 	import random from "lodash/random";
 
-	const colors = [
-		"rgba(244, 237, 224, .05)",
-		"rgba(161, 113, 50, .2)",
-	];
+	const colors = ["rgba(244, 237, 224, .05)", "rgba(161, 113, 50, .2)"];
 
 	const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -21,24 +18,22 @@
 
 	// credits for the code: https://codepen.io/ajm13/pen/qraGKY
 	class Vector {
-		constructor (x, y) {
+		constructor(x, y) {
 			this.x = x;
 			this.y = y;
 		}
 
-		static fromPolar (r, t) {
-			return new Vector(
-				r * Math.cos(t),
-				r * Math.sin(t));
+		static fromPolar(r, t) {
+			return new Vector(r * Math.cos(t), r * Math.sin(t));
 		}
 
-		add (v) {
+		add(v) {
 			this.x = this.x + v.x;
 			this.y = this.y + v.y;
 			return this;
 		}
 
-		mul (x) {
+		mul(x) {
 			this.x = this.x * x;
 			this.y = this.y * x;
 			return this;
@@ -46,7 +41,7 @@
 	}
 
 	class Noise {
-		constructor (w, h, oct) {
+		constructor(w, h, oct) {
 			this.width = w;
 			this.height = h;
 			this.canvas = Noise.compositeNoise(w, h, oct);
@@ -54,7 +49,7 @@
 			this.data = ctx.getImageData(0, 0, w, h).data;
 		}
 
-		static noise (w, h) {
+		static noise(w, h) {
 			const cv = document.createElement("canvas");
 			const ctx = cv.getContext("2d");
 
@@ -75,7 +70,7 @@
 			return cv;
 		}
 
-		static compositeNoise (w, h, oct) {
+		static compositeNoise(w, h, oct) {
 			const cv = document.createElement("canvas");
 			const ctx = cv.getContext("2d");
 
@@ -95,19 +90,19 @@
 			return cv;
 		}
 
-		getNoise (x, y, ch) {
+		getNoise(x, y, ch) {
 			const i = (~~x + ~~y * this.width) * 4;
 			return this.data[i + ch] / 127 - 1;
 		}
 	}
 
 	class Particle {
-		constructor (x, y, vx = 0, vy = 0) {
+		constructor(x, y, vx = 0, vy = 0) {
 			this.pos = new Vector(x, y);
 			this.vel = new Vector(vx, vy);
 		}
 
-		update (noise) {
+		update(noise) {
 			this.pos.add(this.vel);
 
 			const { x, y } = this.pos;
@@ -115,10 +110,10 @@
 			const dy = noise.getNoise(x, y, 1);
 
 			this.vel.add(new Vector(dx, dy));
-			this.vel.mul(.9);
+			this.vel.mul(0.9);
 		}
 
-		draw (ctx) {
+		draw(ctx) {
 			ctx.fillRect(this.pos.x, this.pos.y, 1, 1);
 		}
 	}
@@ -200,7 +195,10 @@
 
 <svelte:window bind:innerWidth />
 
-<div bind:this={ref} class="-mx-4 md:absolute"></div>
+<div
+	bind:this={ref}
+	class="-mx-4 md:absolute"
+/>
 
 <style>
 	div {
