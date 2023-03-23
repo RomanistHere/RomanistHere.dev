@@ -112,7 +112,7 @@
 </script>
 
 <svelte:head>
-	<script defer data-domain="romanisthere.dev" src="https://proxy-plaus.romanisthere.workers.dev/work/script.js"></script>
+	<script defer data-domain="romanisthere.dev" src="https://work.romanisthere.dev/work/script.js"></script>
 </svelte:head>
 
 <div
