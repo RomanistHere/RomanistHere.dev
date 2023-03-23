@@ -108,10 +108,8 @@
 		updateMenu($page.url);
 	});
 
-	afterNavigate(nav => {
-		if (nav.type === "link") {
-			scrollArticleToTop();
-		}
+	afterNavigate(() => {
+		scrollArticleToTop();
 	});
 </script>
 
