@@ -77,6 +77,10 @@
 			url: "my-thoughts/fancy-website",
 		},
 		{
+			title: "Browser extension development tip",
+			url: "my-thoughts/receiving-end",
+		},
+		{
 			title: "Back to main menu",
 			url: "../",
 			action: () => {
@@ -112,7 +116,11 @@
 </script>
 
 <svelte:head>
-	<script defer data-domain="romanisthere.dev" src="https://work.romanisthere.dev/work/script.js"></script>
+	<script
+		defer
+		data-domain="romanisthere.dev"
+		src="https://work.romanisthere.dev/work/script.js"
+	></script>
 </svelte:head>
 
 <div
@@ -129,7 +137,7 @@
 			<main
 				class="md:h-full md:overflow-auto md:no-scrollbar md:-mt-64 md:pt-64 md:pb-64"
 			>
-				<span bind:this={top}></span>
+				<span bind:this={top} />
 				<slot />
 				{#if $page.url.pathname !== "/"}
 					<button
@@ -140,8 +148,10 @@
 					</button>
 				{/if}
 			</main>
-			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block"></div>
-			<div class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"></div>
+			<div class="absolute left-0 right-0 -top-64 h-36 hidden md:block" />
+			<div
+				class="absolute left-0 right-0 bottom-64 h-36 rotate-180 hidden md:block"
+			/>
 		</div>
 		<div class="w-full md:w-2/6 font-lars mb-12 md:mb-0">
 			<div class="-m-4 p-4 overflow-hidden md:px-0 md:mx-0 md:overflow-visible">
