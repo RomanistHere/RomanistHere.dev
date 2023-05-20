@@ -1,6 +1,6 @@
 ---
 title: Important things about coding with ChatGPT most people fail to understand.
-description: Important things about coding with ChatGPT most people fail to understand.
+description: What stays behind the ChatGPT hype? Is there something?
 ---
 
 _The most complex thing about coding is not writing code, but maintaining it._ It’s the most important part also. That’s why websites like YouTube have thousands of components, millions strings of code and ridiculously high number of elements on the page. Though the main functionality is rather simple and most devs could write it in 1/100 (or even 1/1000) of the current codebase, and it would work the same way – most users won’t tell a difference – it wouldn’t be scalable and maintainable, and _such a bad DX (developer experience) would kill the project_.
