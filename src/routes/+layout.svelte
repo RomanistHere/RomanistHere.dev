@@ -77,6 +77,10 @@
 			url: "my-thoughts/fancy-website",
 		},
 		{
+			title: "Hype about coding and ChatGPT",
+			url: "my-thoughts/coding-with-chatgpt",
+		},
+		{
 			title: "Browser extension development tip",
 			url: "my-thoughts/receiving-end",
 		},
