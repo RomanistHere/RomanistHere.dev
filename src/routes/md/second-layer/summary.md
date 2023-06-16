@@ -29,6 +29,6 @@ More than _7 years of serious work in production: [digital agencies, startups, p
 
 _I do [pet projects](../my-projects) in my spare time_ alone and with volunteers including _UX/UI design, product management, development, SEO and marketing_ – some succeeded and some not – so I also know how to fail.
 
-I volunteer myself, for example: [Venus Project](https://www.thevenusproject.com/).
+I also volunteer myself, for example, on [Venus Project](https://www.thevenusproject.com/).
 
 _I programmed mobile apps, watches, landing pages, games, browser extensions, TV installations and of course big enterprise apps_ - but you must be tired to read about me, what about you? [Contact me](contact-me).
