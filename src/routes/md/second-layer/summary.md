@@ -25,7 +25,7 @@ Describing soft skills is like describing a picture - sure, you can imagine mean
 
 ## Other experience ~~skills~~
 
-More than _7 years of serious work in production: [digital agencies, startups, products](worked)_ – I’ve faced it all. _I led small teams to a win as well as carried projects alone_. Been part of some cool crews.
+More than _10 years of serious work in production: [digital agencies, startups, products](worked)_ – I’ve faced it all. _I led small teams to a win as well as carried projects alone_. Been part of some cool crews.
 
 _I do [pet projects](../my-projects) in my spare time_ alone and with volunteers including _UX/UI design, product management, development, SEO and marketing_ – some succeeded and some not – so I also know how to fail.
 

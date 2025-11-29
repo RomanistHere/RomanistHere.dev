@@ -10,4 +10,4 @@ Links:
 - [Resume](/Roman%20Smunyov%20resume.pdf)
 - [CV](/Roman%20Smunyov%20CV.pdf)
 
-These two are up to date at March 2023.
+CV has not been updated for a long time. Resume however is up to date atm (2026).

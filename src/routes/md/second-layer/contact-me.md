@@ -1,6 +1,6 @@
 ---
 title: Contact me for work
-description: The best way to contact Roman for ay work-related purpose.
+description: The best way to contact Roman for any work-related purpose.
 ---
 
 Email is the best way to communicate privately.

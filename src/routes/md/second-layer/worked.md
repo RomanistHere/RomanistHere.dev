@@ -3,11 +3,15 @@ title: Where I worked
 description: Companies Roman worked at.
 ---
 
-I've worked at 4 companies so far. It all began in a small local digital agency and ended up going worldwide. I'll list companies by relevancy - from current to old ones.
+I've worked at 5 companies so far. It all began in a small local digital agency and ended up going worldwide. I'll list companies by relevancy - from current to old ones.
+
+## Peterson Academy (PA)
+
+[Link](https://petersonacademy.com). Who doesn't know Dr. Jordan B Peterson? I had a lucky opportunity to be at the very base of a team who founded and launched the Academy. And what a great team we gathered. Started out as a team of a few people and grew to multiple teams, one of which I was lead of before I moved to become a head of web security. Since Dr. Peterson is rather a famous persona, there is a lot of work in that area and I enjoy it, while not abandoning full-stack development of course. Remote.
 
 ## NLX
 
-[Link](https://nlx.ai/our-team). New York based startup where I work remotely right now and the best place I've worked at. I got to work with Svelte, React, Vue and Elm here. Thanks to Peter, I have seriously advanced my skills in Functional Programming. Apart from our own applications: Voice Compass and Dialog Studio - I've done some projects for big clients I can't name and participated in our [open source SDK](https://github.com/nlxai) development as a developer and lead.
+[Link](https://nlx.ai/). New York based startup where I worked remotely and at that moment it was the best place I've worked at. I got to work with Svelte, React, Vue and Elm here. Thanks to Peter, I have seriously advanced my skills in Functional Programming. Apart from our own applications: Voice Compass and Dialog Studio - I've done some projects for big clients I can't name and participated in our [open source SDK](https://github.com/nlxai) development as a developer and lead.
 
 ## Nord Security (NordVPN, NordPass)
 
