@@ -3,7 +3,11 @@ title: Where I worked
 description: Companies Roman worked at.
 ---
 
-I've worked at 5 companies so far. It all began in a small local digital agency and ended up going worldwide. I'll list companies by relevancy - from current to old ones.
+I've worked at 6 companies so far. It all began in a small local digital agency and ended up going worldwide. I'll list companies by relevancy - from current to old ones.
+
+## Khalifa Digital Security
+
+[Link](https://khalifa-digital-security.com). After getting into web-security seriously again at the previous job, I found out web-secure development to be my very strong side as well as a point of huge interest. So with 2 people who prefer to stay anonymous at this time (due to privacy reasons, which I understand and respect) we bootstrapped an agency which I am currently co-founding. We have under 10 experts total who help building and securing our digital space. We also help companies and individuals with digital privacy and health, because we strongly believe that these three digital skills are all needed for staying safe and happy on the web: privacy, health and security.
 
 ## Peterson Academy (PA)
 
